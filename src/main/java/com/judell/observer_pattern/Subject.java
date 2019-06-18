@@ -8,7 +8,7 @@ public interface Subject {
 
 //    void notifyObserver();
 
-    String  notifyObserverUser();
+    void notifyObserverUser();
 
-    String notifyObserverUsers();
+    void notifyObserverUsers();
 }

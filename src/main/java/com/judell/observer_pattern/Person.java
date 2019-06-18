@@ -2,9 +2,11 @@ package com.judell.observer_pattern;
 
 public class Person implements Observer{
     private String name;
+    private String resp;
 
-    Person(String name){
+    Person(String name, String resp){
         this.name = name;
+        this.resp = resp;
     }
 
 //    @Override
@@ -15,6 +17,10 @@ public class Person implements Observer{
     @Override
     public void notifyUser(String s) {
         System.out.println(name + " got the msg " + s);
+    }
+
+    public String resp(){
+        return resp;
     }
 
 }

@@ -17,7 +17,7 @@ public class RandomMain {
 
         // Get a random entry from the HashMap.
         Object[] crunchifyKeys = companies.keySet().toArray();
-        Object key = crunchifyKeys[new Random().nextInt(crunchifyKeys.length)];
+        Object key = crunchifyKeys[new Random(System.currentTimeMillis()).nextInt(crunchifyKeys.length)];
         System.out.println("************ Random Value ************ \n" + key + " :: " + companies.get(key));
 
         List<Map.Entry<String, String>> list = new ArrayList<Map.Entry<String, String>>(companies.entrySet());

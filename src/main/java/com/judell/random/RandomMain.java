@@ -6,7 +6,7 @@ public class RandomMain {
     public static void main(String[] args) {
         String user = "!help";
 
-        if (user.equals(Triggers.triggerKeys("!hi"))){
+        if (user.equals(Triggers.triggerKeys("!help"))){
             randomNumber.setRandomNumber(20);
             System.out.println("you got helped");
         }

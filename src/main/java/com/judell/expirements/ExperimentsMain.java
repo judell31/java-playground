@@ -1,9 +1,10 @@
 package com.judell.expirements;
 
+import java.util.Random;
+
 public class ExperimentsMain {
 
     public static void main(String[] args) {
-        System.out.println(userType(1));
     }
 
     public static String userType(Integer num){
@@ -16,3 +17,52 @@ public class ExperimentsMain {
         return "yup";
     }
 }
+
+/*
+
+public class Test  {
+
+    public static void main(String[] args) {
+        A myObject = new B();
+        myObject.doSomething();
+    }
+
+}
+
+class A {
+    public void doSomething(){
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+    public void doSomething(){
+        System.out.println("B");
+    }
+}
+
+public class Test  {
+
+    public static void main(String[] args) {
+        A myObject = new B();
+        myObject.doSomething();
+    }
+
+}
+
+class A {
+    public void doSomething(){
+        System.out.println("A");
+    }
+}
+
+class B extends A {
+    public void doSomething(){
+        System.out.println("B");
+    }
+
+    public void doSomethingElse(){
+        System.out.println("Something else");
+    }
+}
+ */

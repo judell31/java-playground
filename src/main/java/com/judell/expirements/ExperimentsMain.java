@@ -5,16 +5,23 @@ import java.util.Random;
 public class ExperimentsMain {
 
     public static void main(String[] args) {
+        System.out.println(add(2, 2, 5 ,7));
     }
 
-    public static String userType(Integer num){
-        if(num == 1){
-            return "user";
-        }
-        else if (num == 2){
-            return "content creator";
-        }
-        return "yup";
+//    public static void x(){
+////        String[] array = {"d", "c", "e"};
+////        int i;
+////        for (i = 0; i < array.length; i++){
+////            System.out.println(array[i]);
+////        }
+////        System.out.println(i);
+//    }
+
+    public static Integer add(int a, int b, int y, int z){
+        Integer x = a + b;
+        Integer w = y * z;
+        Integer u = x + w;
+        return u;
     }
 }
 

@@ -13,7 +13,6 @@ import java.util.Map;
  *
  * You may assume that each input would have exactly one solution, and you may not use the same element twice.
  */
-//if z[x] + z[x] = target - number found
 public class TwoSums {
     public static void main(String[] args) {
         int[] x = {11, 2, 15, 34, 7};

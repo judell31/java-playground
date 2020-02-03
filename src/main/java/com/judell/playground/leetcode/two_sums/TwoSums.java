@@ -15,7 +15,8 @@ import java.util.Map;
  */
 public class TwoSums {
     public static void main(String[] args) {
-        int[] x = {11, 2, 15, 34, 7};
+        int[] x = {11, 2, 15, 34, 7, 3, 6};
+        int[] t = {11, 30, 15, 34, 57};
         int target = 9;
         twoSum(x, target);
     }
@@ -26,7 +27,9 @@ public class TwoSums {
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {
-                return new int[] { map.get(complement), i };
+                System.out.println("Values that add to equal" + " " + target + ": " + nums[map.get(complement)] + " " + nums[i]);
+                System.out.println("Index of values: " + map.get(complement) + " " + i);
+                return new int[] {map.get(complement), i};
             }
             map.put(nums[i], i);
         }

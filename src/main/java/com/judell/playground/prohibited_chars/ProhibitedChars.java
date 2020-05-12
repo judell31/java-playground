@@ -6,8 +6,6 @@ public class ProhibitedChars {
 
     /**
      * This only checks for ASCII Values 0-127
-     * @param args
-     * @throws Exception
      */
     //Todo: Account for Unicode Characters
     public static void main(String[] args) throws Exception{

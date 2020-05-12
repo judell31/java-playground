@@ -25,7 +25,7 @@ public class ProhibitedChars {
         System.out.println(correctInput);
         for (int i = 0; i < correctInput.length(); i++){
             for (int p = 0; p < prohibitedCharsList.size(); p++){
-                if (correctInput.charAt(i) == prohibitedCharsList.get(p)){
+                if (correctInput.charAt(i) == prohibitedCharsList.get(p) || correctInput.charAt(i) >= '\u0080'){
                     System.out.println("String " + correctInput + " contains illegal character(s): " + correctInput.charAt(i));
                     throw new Exception("You have entered an illegal character");
                 }
@@ -35,7 +35,7 @@ public class ProhibitedChars {
         System.out.println("\nInvalid Input");
         for (int i = 0; i < incorrectInput.length(); i++){
             for (int p = 0; p < prohibitedCharsList.size(); p++){
-                if (incorrectInput.charAt(i) == prohibitedCharsList.get(p)){
+                if (incorrectInput.charAt(i) == prohibitedCharsList.get(p) || incorrectInput.charAt(i) >= '\u0080'){
                     System.out.println("String " + incorrectInput + " contains illegal character(s): " + incorrectInput.charAt(i));
                     throw new Exception("You have entered an illegal character");
                 }

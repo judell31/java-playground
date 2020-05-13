@@ -16,10 +16,14 @@ public class ProhibitedChars {
         char c = 0;
         for (int i = 0; i < 128; i++){
             c++;
-            if (!Character.isLetter(c) && c != 39){
+            if (!Character.isLetter(c) && c != 39 && c != 32){
                 prohibitedCharsList.add(c);
             }
         }
+        System.out.println(prohibitedCharsList);
+
+        char x = 32;
+        correctInput = correctInput.replaceAll("\\s", "");
 
         System.out.println("Valid Input");
         System.out.println(correctInput);
@@ -33,6 +37,7 @@ public class ProhibitedChars {
         }
 
         System.out.println("\nInvalid Input");
+        System.out.println(incorrectInput);
         for (int i = 0; i < incorrectInput.length(); i++){
             for (int p = 0; p < prohibitedCharsList.size(); p++){
                 if (incorrectInput.charAt(i) == prohibitedCharsList.get(p) || incorrectInput.charAt(i) >= '\u0080'){

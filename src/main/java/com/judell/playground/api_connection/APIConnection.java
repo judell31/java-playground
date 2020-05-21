@@ -14,15 +14,15 @@ import java.net.http.HttpResponse;
  */
 public class APIConnection {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         apiConnection();
     }
 
-    public static void apiConnection() throws Exception{
+    public static void apiConnection(){
         HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("http://localhost:8080/get-games")).build();
-        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
+        HttpRequest request = HttpRequest.newBuilder().uri(URI.create("http://192.168.1.30:8080/game-master/get-games")).build();
+        client.sendAsync(
+                request, HttpResponse.BodyHandlers.ofString()).thenApply(HttpResponse::body)
                 .thenApply(APIConnection::parse).join();
 //                .thenAccept(System.out::println).join();
     }

@@ -1,4 +1,4 @@
-package com.judell.playground;
+package com.judell.playground.email_validation;
 
 import java.util.regex.Pattern;
 

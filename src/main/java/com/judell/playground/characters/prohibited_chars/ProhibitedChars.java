@@ -1,4 +1,4 @@
-package com.judell.playground.prohibited_chars;
+package com.judell.playground.characters.prohibited_chars;
 
 import java.util.ArrayList;
 

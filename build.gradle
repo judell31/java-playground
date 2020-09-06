@@ -11,12 +11,12 @@ sourceCompatibility = 11
 repositories {
     jcenter()
     maven {
-//        credentials {
-//            username = 'jtdavis'
-//            password = 'Mylove082917!'
-//        }
+        credentials {
+            username = 'jtdavis'
+            password = 'Mylove082917!'
+        }
         //FixMe: this ip address is correct but it does not match server ip
-        url "http://192.168.1.33:8081/repository/maven-public/"
+        url "http://10.0.0.109:8081/repository/maven-public/"
     }
 }
 

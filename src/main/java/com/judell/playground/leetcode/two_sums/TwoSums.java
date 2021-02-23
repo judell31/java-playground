@@ -1,7 +1,5 @@
 package com.judell.playground.leetcode.two_sums;
 
-import com.judell.test.add_numbers.AddNumbers;
-
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,17 +1,18 @@
 package com.judell.playground.Logging;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
+//Todo: fix slf4j import dep
 public class LogMain {
-    private final static Logger logger = LoggerFactory.getLogger(LogMain.class);
+//    private final static Logger logger = LoggerFactory.getLogger(LogMain.class);
 
     public static void main(String[] args) {
         int x = 3;
-        logger.debug("Debug");
-        logger.info(x(4));
-        logger.error("Error {}", x);
-        logger.atInfo().addArgument(x(3)).log("the number was {}");
+//        logger.debug("Debug");
+//        logger.info(x(4));
+//        logger.error("Error {}", x);
+//        logger.atInfo().addArgument(x(3)).log("the number was {}");
     }
 
     public static String x(int x){

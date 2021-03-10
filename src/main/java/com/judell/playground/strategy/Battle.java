@@ -5,7 +5,7 @@ package com.judell.playground.strategy;
  */
 //https://www.youtube.com/watch?v=11yEH9RAI28
 public class Battle {
-    
+
     public static void main(String[] args) {
         Goku ssj = new Goku("ssj");
         Goku ssj3 = new Goku("ssj3");

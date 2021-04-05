@@ -1,4 +1,4 @@
-package com.judell.playground.strategy;
+package com.judell.playground.design_patterns.strategy;
 
 public class SuperSaiyanThree implements SaiyanStrategy {
     @Override

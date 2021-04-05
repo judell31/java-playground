@@ -1,6 +1,6 @@
 package com.judell.playground.data_type_values;
 
-public class DataTypeValues {
+public class MinMaxDataTypeValues {
 
     /**
      *Prints each data type bit size and min and max value

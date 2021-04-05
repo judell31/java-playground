@@ -1,4 +1,4 @@
-package com.judell.playground.singleton;
+package com.judell.playground.design_patterns.singleton;
 
 public class MainClass {
 

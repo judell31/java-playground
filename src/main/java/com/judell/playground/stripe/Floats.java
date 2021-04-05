@@ -1,6 +1,6 @@
 package com.judell.playground.stripe;
 
-public class Stripe {
+public class Floats {
 
     public static void main(String[] args) {
         double charge = 20.99;

@@ -8,6 +8,12 @@ public class CountryLocationAndCurrency {
     public static void main(String[] args) {
         String[] countries = Locale.getISOCountries();
 
+//        Locale locale = new Locale("en", "US");
+//
+//        Currency currency = Currency.getInstance(locale);
+//        System.out.println("$" + currency.getCurrencyCode().toLowerCase());
+        System.out.println();
+
         for (String country : countries) {
             Locale locale = new Locale("en", country);
             Currency currency = Currency.getInstance(locale);
